@@ -977,7 +977,7 @@ function getProductsList(page_id) {
                             $('<b/>').append('Category: '), value.category.title, '<br>',
                             $('<b/>').append('Sub Category: '), value.subcategory.title, '<br>',
                             $('<b/>').append('Child Category: '), value.category.title, '<br>',
-                            $('<b/>').append('Brand: '), value.brand.name, '<br>',
+                            $('<b/>').append('Brand: ', value.brand?.name ?? ''), '<br>',
                         ),
                         $('<td/>', {style: 'width:40%','class':'text-center'}).append(
                             translation_verified

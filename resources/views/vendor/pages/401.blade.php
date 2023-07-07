@@ -13,9 +13,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 m-auto">
-                <img src="{{ URL::to('/vendor/images/errors/401.svg') }}" class="w-100"
+                <img src="{{ URL::to('/401.svg') }}" class="w-100"
                     alt="401 Unauthorized">
-                <a href="{{ URL::to('/vendor/login') }}" class="btn btn-primary w-50 d-block mx-auto">Please Login
+                <a href="{{ URL::to('/') }}" class="btn btn-primary w-50 d-block mx-auto">Please Login
                     First</a>
             </div>
         </div>

@@ -200,7 +200,7 @@ class AuthController extends Controller
         if ($status == 200) {
 
             $user   = $response->body->user;
-            $user_role_permissions   = $response->body->user_role_permissions[0]->permissions;
+            $user_role_permissions   =isset($response->body->user_role_permissions[0]) ? $response->body->user_role_permissions[0]->permissions : [];
             $notifications   = $response->body->notifications;
             if ($user->role_id == 2) {
                 $token  = $response->body->token;

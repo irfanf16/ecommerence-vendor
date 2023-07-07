@@ -44,8 +44,6 @@ class VendorAjaxRequestsController extends Controller
         $url      = config('app.url')."api/vendor/product/subcategories-brands";
         $response = \Unirest\Request::post($url, $headers, $body);
 
-        // dd($response);
-
         $status = $response->body->status;
 
         if ($status == 200) {

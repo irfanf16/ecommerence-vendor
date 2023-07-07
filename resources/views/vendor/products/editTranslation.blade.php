@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="col-md-6 mt-2">
-                            <label for="name" class="control-label"><strong>Product Name - Arabic:<sup
+                            <label for="name" class="control-label"><strong>Product Name - Translation:<sup
                                         class="text-danger">*</sup></strong> </label>
                             <input type="text" class="form-control" name="name_ar" id="name_ar" value="{{ $product->name_ar }}"
                                 required placeholder="Enter product name in Arabic">
@@ -52,21 +52,21 @@
                                 id="short_description">{{ $product->short_description }}</textarea>
                         </div>
                         <div class="col-md-12 mt-5">
-                            <label for="short_desc" class="control-label"><strong>Short Description - Arabic:<sup
+                            <label for="short_desc" class="control-label"><strong>Short Description - Translation:<sup
                                         class="text-danger">*</sup></strong></label>
                             <textarea class="form-control description" name="short_description_ar"
                                 id="short_description_ar">{{ $product->short_description_ar }}</textarea>
                         </div>
                         {{-- detailed description --}}
                         <div class="col-md-12 mb-4">
-                            <label for="detailed_desc" class="control-label"><strong>Detailed 
+                            <label for="detailed_desc" class="control-label"><strong>Detailed
                                     Description - English:</strong></label>
                             <textarea class="form-control description" name="detailed_description"
                                 id="detailed_description">{{ $product->detailed_description }}</textarea>
                         </div>
                         <div class="col-md-12 mb-4">
                             <label for="detailed_desc" class="control-label"><strong>Detailed
-                                    Description - Arabic:</strong></label>
+                                    Description - Translation:</strong></label>
                             <textarea class="form-control description" name="detailed_description_ar"
                                 id="detailed_description_ar">{{ $product->detailed_description_ar }}</textarea>
                         </div>
@@ -127,7 +127,7 @@
         // });
 
         var options =  {
-  height: 300,                
+  height: 300,
   placeholder: 'Start typing your text...',
   toolbar: [
       ['style', ['bold', 'italic', 'underline', 'clear']],

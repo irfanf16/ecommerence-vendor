@@ -10,7 +10,7 @@
                     {{-- image div --}}
                     <div class="col-md-8">
                         <div class="login-image">
-                            <img src="{{ url('/vendor/images/bg/login1.svg') }}" alt="login image">
+{{--                            <img src="{{ url('/vendor/images/bg/login1.svg') }}" alt="login image">--}}
                         </div>
 
                     </div>
@@ -86,37 +86,17 @@
                                             {{ __('Login') }}
                                         </button>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            {{-- forgot password --}}
-                                            @if (Route::has('password.request'))
-                                                <a class="btn btn-link float-right margin-0"
-                                                    href="{{ url('password/reset/email') }}">
-                                                    {{ __('Forgot Password') }}
-                                                </a>
-                                            @endif
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="sign-up-btn">
-                                                <p>Create your account easy with less information</p>
-                                                <a href="{{ url('vendor/register') }}">Sign up</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
+{{--                                    <div class="row">--}}
+{{--                                        <div class="col-md-12">--}}
+{{--                                            @if (Route::has('password.request'))--}}
+{{--                                                <a class="btn btn-link float-right margin-0"--}}
+{{--                                                    href="{{ url('password/reset/email') }}">--}}
+{{--                                                    {{ __('Forgot Password') }}--}}
+{{--                                                </a>--}}
+{{--                                            @endif--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
                                 </form>
-                                {{-- <p> --}}
-                                {{-- <hr> --}}
-                                {{-- google --}}
-                                {{-- <a href="{{ route('social.oauth', 'google') }}" class="btn btn-block btn-outline-danger"> <i
-                                            class="fab fa-google"></i>   Login via
-                                        Google</a> --}}
-
-                                {{-- facebook --}}
-                                {{-- <a href="{{ route('social.oauth', 'facebook') }}" class="btn btn-block btn-outline-primary">
-                                        <i class="fab fa-facebook-f"></i>   Login
-                                        via facebook</a> --}}
-                                {{-- </p> --}}
                             </div>
                         </div>
 

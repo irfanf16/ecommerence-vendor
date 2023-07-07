@@ -17,7 +17,7 @@ class PusherNotificationController extends Controller
 
     public function sendEvent($name)
     {
-        event(new InformMe($name));
+//        event(new InformMe($name));
 
     }
 }

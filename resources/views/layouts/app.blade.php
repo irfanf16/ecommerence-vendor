@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - {{ config('app.name') }} Panel - Storak.qa</title>
+    <title>@yield('title') - {{ config('app.name') }}</title>
 
     {{-- <!-- Scripts --> --}}
     <script src="{{ asset('js/app.js') }}" defer></script>

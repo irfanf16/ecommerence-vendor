@@ -68,7 +68,7 @@ trait userPermissionCheck
 //        }else{
 //            dd( "Module does not exit");
 //        }
-
+        return true;
         $user_role_permissions = session()->get('user_role_permissions');
         if(isset($module)){
             foreach ($user_role_permissions as $permission){

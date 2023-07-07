@@ -7,10 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     {{-- TITLE --}}
-    <title>@yield('title') - Storak</title>
-
-    <meta name="description"
-        content="AppUI is a Web App Bootstrap vendor Template created by pixelcave and published on Themeforest">
+    <title>@yield('title')</title>
+    <meta name="description" content="">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -25,8 +23,6 @@
 
     {{-- sweetalerts --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    {{-- <link rel="stylesheet" href="{{ URL::to('/admin/css/sweetalerts.css') }}">
-    <script src="{{ URL::to('/admin/js/sweetalerts.js') }}"></script> --}}
 
     <!-- colorpicker -->
     <link rel="stylesheet"
@@ -38,9 +34,6 @@
 
     {{-- files includes for datatables in index pages --}}
     <link rel="stylesheet" href="{{ URL::to('/assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css') }}">
-    <!-- <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/fixedcolumns/3.2.2/css/fixedColumns.dataTables.min.css" rel="stylesheet" /> -->
-
 
     {{-- custom css for **form-bdr-top ** --}}
     <link rel="stylesheet" href="{{ URL::to('/vendor/css/custom.css') }}">
@@ -52,13 +45,9 @@
     {{-- SUMMERNOTE EDITOR --}}
     <link rel="stylesheet" href="{{ URL::to('/assets/vendor/summernote/dist/summernote.min.css') }}" />
 
-    {{-- <link rel="stylesheet" href="{{ URL::to('/assets/vendor/summernote/dist/summernote.min.css') }}" /> --}}
-
     {{-- preview tables --}}
     <link rel="stylesheet" href="{{ URL::to('/vendor/css/preview.css') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-
 
     @yield('head')
 

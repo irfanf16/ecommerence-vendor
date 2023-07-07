@@ -17,7 +17,7 @@
         <img src="{{ url('/vendor/images/404/1.svg') }}" alt="" height="400px" width="600px">
         <br>
         <br>
-        <h6>Page not found - Storak.qa</h6>
+        <h6>Page not found</h6>
     </div>
 </body>
 

@@ -80,7 +80,7 @@
         <div class="row clearfix">
 
             {{-- Total Products --}}
-            <div class="col-lg-3 col-md-8 col-sm-12  ">
+            <div class="col-lg-4 col-md-8 col-sm-12  ">
                 <a href="{{ URL::to('/vendor/products') }}" title="Go to all products page">
                     <div class="card shadow-sm">
                         <div class="body pb-1">
@@ -100,7 +100,7 @@
             </div>
 
             {{-- Total Orders --}}
-            <div class="col-lg-3 col-md-8 col-sm-12  ">
+            <div class="col-lg-4 col-md-8 col-sm-12  ">
                 {{-- <a href="{{ URL::to('/vendor/orders') }}" title="Go to all order page"> --}}
                 <div class="card  shadow-sm">
                     <div class="body pb-1">
@@ -120,7 +120,7 @@
             </div>
 
             {{-- Total Coupons --}}
-            <div class="col-lg-3 col-md-8 col-sm-12  ">
+            <div class="col-lg-4 col-md-8 col-sm-12  ">
                 {{-- <a href="{{ URL::to('/vendor/coupons') }}" title="Go to all coupons page"> --}}
                 <div class="card border-0 shadow-sm">
                     <div class="body pb-1">
@@ -140,22 +140,22 @@
             </div>
 
             {{-- Active Offers --}}
-            <div class="col-lg-3 col-md-8 col-sm-12  ">
-                <div class="card shadow-sm">
-                    <div class="body pb-1">
-                        <div class="row">
-                            <div class="col-8">
-                                <h6>Active Offers</h6>
-                                <h2>12</h2>
-                            </div>
-                            <div class="col-4 px-2">
-                                <img src="{{ url('vendor/images/icons/order/active-order.svg') }}"
-                                     class="rounded w-100 stats-icons" alt="Active Offers ">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="col-lg-3 col-md-8 col-sm-12  ">--}}
+{{--                <div class="card shadow-sm">--}}
+{{--                    <div class="body pb-1">--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-8">--}}
+{{--                                <h6>Active Offers</h6>--}}
+{{--                                <h2>12</h2>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-4 px-2">--}}
+{{--                                <img src="{{ url('vendor/images/icons/order/active-order.svg') }}"--}}
+{{--                                     class="rounded w-100 stats-icons" alt="Active Offers ">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             {{-- order sale graph --}}
             {{-- <div class="col-lg-12 col-md-12">

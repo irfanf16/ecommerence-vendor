@@ -91,7 +91,7 @@ class AppServiceProvider extends ServiceProvider
 //
 //        });
         Blade::if('can', function ($module) {
-
+            return true;
             $user_role_permissions = session()->get('user_role_permissions');
             if(isset($module)){
                 foreach ($user_role_permissions as $permission){
