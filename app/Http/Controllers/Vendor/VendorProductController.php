@@ -588,6 +588,7 @@ class VendorProductController extends Controller
     */
     public function destroy($id)
     {
+
         $token = session()->get('token');
         $headers = array('Accept' => 'application/json', 'Authorization' => $token);
         $body = NULL;
@@ -605,8 +606,6 @@ class VendorProductController extends Controller
                     "action" => 'success',
                     "message" => 'Product  has been deleted successfully'
                 ));
-                dd('working');
-
 
                 return back();
             }

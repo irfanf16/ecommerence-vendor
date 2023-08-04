@@ -914,7 +914,7 @@ function getProductsList(page_id) {
                     editProduct = ''
                 }
                 if (response.delete) {
-                    deleteProduct = '<form action=\'/products/destroy/'+value.id+'\' method="POST" class="d-inline"><input type="hidden" name="_token" value="'+$('meta[name="csrf-token"]').attr('content')+'"><button type="button" class="btn btn-danger btn-sm archive-btn" title="Delete This Product "><span class="btn-inner-icon"><i class="fa fa-trash text-white"></i></span></button></form>\n'
+                    deleteProduct = '<form action=\'/vendor/products/destroy/'+value.id+'\' method="POST" class="d-inline"><input type="hidden" name="_token" value="'+$('meta[name="csrf-token"]').attr('content')+'"><button type="button" class="btn btn-danger btn-sm archive-btn" title="Delete This Product "><span class="btn-inner-icon"><i class="fa fa-trash text-white"></i></span></button></form>\n'
                 }else{
                     deleteProduct=''
                 }
@@ -974,9 +974,9 @@ function getProductsList(page_id) {
                         ),
                         $('<td/>', {style: 'width:40%'}).append(
                             $('<b/>').append('Product: '), value.name, '<br>',
-                            $('<b/>').append('Category: '), value.category.title, '<br>',
-                            $('<b/>').append('Sub Category: '), value.subcategory.title, '<br>',
-                            $('<b/>').append('Child Category: '), value.category.title, '<br>',
+                            $('<b/>').append('Category: '), value.category?.title, '<br>',
+                            $('<b/>').append('Sub Category: '), value.subcategory?.title, '<br>',
+                            $('<b/>').append('Child Category: '), value.category?.title, '<br>',
                             $('<b/>').append('Brand: ', value.brand?.name ?? ''), '<br>',
                         ),
                         $('<td/>', {style: 'width:40%','class':'text-center'}).append(
