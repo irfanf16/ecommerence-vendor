@@ -918,13 +918,13 @@ function getProductsList(page_id) {
                 }else{
                     deleteProduct=''
                 }
-                if (value.status) {
+                if (value.status == 1) {
                     product_status = $('<span/>',{'class':'badge badge-lg badge-pill badge-success text-uppercase font-weight-bold'}).append('Active')
                 } else {
                     product_status =$('<span/>',{'class':'badge badge-lg badge-pill badge-danger text-uppercase font-weight-bold'}).append('Inactive')
                 }
 
-                if (value.featured) {
+                if (value.featured == 1) {
                     product_feature =$('<span/>',{'class':'badge badge-lg badge-pill badge-success text-uppercase font-weight-bold'}).append('Yes')
                 } else {
                     product_feature =$('<span/>',{'class':'badge badge-lg badge-pill badge-danger text-uppercase font-weight-bold'}).append('No')
@@ -933,7 +933,7 @@ function getProductsList(page_id) {
                 editTranslation = '<a href="/vendor/products/' + value.id + '/editTranslation" title="Edit This Product Translation " class="btn btn-primary btn-sm m-1"><span class="btn-inner-icon "><i class="fa fa-language" aria-hidden="true"></i></span></a>'
 
                 //translation verified
-                if (value.translation_verified) {
+                if (value.translation_verified == 1) {
                     translation_verified = $('<label/>', {'class': 'toggle-switch'}).append(
                         $('<input/>', {
                             type: 'checkbox',
